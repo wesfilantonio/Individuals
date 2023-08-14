@@ -1,0 +1,84 @@
+:root{
+  --body-font:'Arial', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #d5e1ef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.qr-conteiner{
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+}
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+h1{
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 14pt;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p{
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: 11pt;
+  text-align: center;
+  color: gray;
+}
+
+.packege{
+  font-family: var(--body-font);
+  font-size: 8pt;
+  text-align: center;
+}
+
+.attribution{
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media query para telas menores, como smartphones em modo paisagem */
+@media (max-width: 568px) {
+  body {
+    flex-direction: column;
+    /* Alterar para layout de coluna */
+    align-items: center;
+  }
+
+  .qr-conteiner {
+    width: 80%;
+    /* Reduzir a largura do contêiner */
+    margin: 20px auto;
+    /* Adicionar margem superior e inferior */
+  }
+
+  h1 {
+    font-size: 12pt;
+    /* Tamanhos de fonte menores */
+  }
+
+  p {
+    font-size: 10pt;
+    /* Tamanhos de fonte menores */
+  }
+}
